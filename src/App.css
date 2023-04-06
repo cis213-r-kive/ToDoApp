@@ -1,3 +1,13 @@
 .App {
   text-align: center;
+  padding-top: 2em;
+}
+
+.pro-form1 {
+  margin-right: 4em;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
 }

@@ -7,8 +7,8 @@ function FilterForm() {
             <header className='pro-form2'>
                 <form>
                     <input type="text" placeholder="Search Item..." className="form2-input"></input>
+                    <button id="btnFilter">FILTER</button>
                 </form>
-                <button id="btnFilter">FILTER</button>
             </header>
         </div>
     );
