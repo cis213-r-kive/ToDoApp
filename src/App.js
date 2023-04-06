@@ -2,7 +2,7 @@ import './App.css';
 
 //component imports here
 import Header from './components/Header';
-import ToDoFrom from './components/ToDoFrom';
+import ToDoForm from './components/ToDoForm';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Header />
       </div>
       <div>
-        <ToDoFrom />
+        <ToDoForm />
       </div>
     </div>
   );

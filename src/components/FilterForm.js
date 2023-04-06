@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ToDoForm() {
+function FilterForm() {
     // code goes here
     return (
         <div>
@@ -14,4 +14,4 @@ function ToDoForm() {
     );
 }
 
-export default ToDoForm;
+export default FilterForm;
