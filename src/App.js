@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import React from 'react'
 
 //component imports here
 import Header from './components/Header';
@@ -15,8 +16,7 @@ function App() {
 // use state for input
 const [userInput, setUserInput] = useState("");
 
-// use state for the the current list and to add
-const [todos, setTodos] = useState([INITIAL_TODO])
+
 
 // inital items on todo
 const INITIAL_TODO = [
@@ -25,21 +25,23 @@ const INITIAL_TODO = [
   {id: uuidv4(), title: 'Finish code', isCompleted: false, dateAdded: new Date()}
 ]
 
+// use state for the the current list and to add
+const [todos, setTodos] = useState([INITIAL_TODO])
+
   return (
     <div className="App">
+      <Header />
 
-      <div>
-        <Header />
-      </div>
       <div className='forms'>
         <ToDoForm 
             userInput={userInput}
             setUserInput={setUserInput}
             todos={todos}
-            setTodos={setTodos}s
+            setTodos={setTodos}
         />
         <FilterForm />
       </div>
+
       <div>
         <ToDoList 
           todos={todos}

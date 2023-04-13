@@ -12,7 +12,7 @@ function ToDoForm(userInput, setUserInput, todos, setTodos) {
         event.preventDefault();
         setTodos([...todos, {
             id: uuidv4(),
-            title: {input},
+            title: {userInput},
             onComplete: false,
             dateAdded: new Date()
         }])
@@ -36,6 +36,6 @@ function ToDoForm(userInput, setUserInput, todos, setTodos) {
             </header>
         </div>
     );
-} Í
+} 
 
 export default ToDoForm;

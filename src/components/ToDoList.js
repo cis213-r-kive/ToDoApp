@@ -6,10 +6,14 @@ function ToDoList(todos) {
     return (
         <div>
             {todos.map((item) => (
-                <li key={item.id}>
-                    <input type="checkbox">
-                        {item.title}
-                    </input>
+                console.log(todos),
+                <li className="listItem" key ={item.id}> 
+                    <input 
+                        type="checkbox"
+                        value={item.title}
+                        className="list"
+                        onChange={(event) => event.preventDefault()}
+                    />
                 </li>
             ))}
         </div>
